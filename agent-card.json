@@ -1,0 +1,66 @@
+{
+  "name": "koikeeper",
+  "description": "Premium koi diagnostics — koi are $1k-50k each; owners pay £199/mo.",
+  "url": "https://koikeeper.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "fishkeeper-ai-mcp",
+      "name": "fishkeeper-ai-mcp",
+      "description": "Tool: fishkeeper-ai-mcp (part of koikeeper.ai hive L5)"
+    },
+    {
+      "id": "k25-vision",
+      "name": "k25-vision",
+      "description": "Tool: k25-vision (part of koikeeper.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'koikeeper'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://koikeeper.ai/oauth/authorize",
+          "tokenUrl": "https://koikeeper.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": true,
+    "currency": "USD",
+    "amount": "1.00",
+    "freeCallsPerIPPerDay": "0"
+  }
+}
