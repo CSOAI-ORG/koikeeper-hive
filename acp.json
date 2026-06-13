@@ -1,0 +1,21 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "koikeeper",
+    "description": "Premium koi diagnostics \u2014 koi are $1k-50k each; owners pay \u00a3199/mo.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://koikeeper.ai"
+      }
+    ],
+    "capabilities": [
+      "fishkeeper-ai-mcp",
+      "k25-vision",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
