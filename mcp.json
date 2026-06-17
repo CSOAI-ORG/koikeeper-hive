@@ -1,0 +1,14 @@
+{
+  "name": "koikeeper.ai",
+  "title": "Koi Keeper — Koi Pond & Fish Health",
+  "description": "Specialised AI for koi pond management, koi health diagnostics, and Japanese koi variety identification.",
+  "cluster": "CONSUMER",
+  "servers": [
+        { "id": "koi-mcp.sov3.meok.ai", "url": "https://koi-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "pond-mcp.sov3.meok.ai", "url": "https://pond-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "koi-health-mcp.sov3.meok.ai", "url": "https://koi-health-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
